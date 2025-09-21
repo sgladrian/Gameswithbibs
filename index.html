@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>4 Gewinnt Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>4 Gewinnt Multiplayer</h1>
+  <div id="connection">
+    <p>Deine ID: <span id="myId">...</span></p>
+    <input id="peerIdInput" placeholder="ID des Gegners eingeben">
+    <button id="connectBtn">Verbinden</button>
+  </div>
+
+  <div id="game"></div>
+  <p id="status">Warte auf Verbindung...</p>
+  <button id="restart">Neues Spiel</button>
+
+  <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+  <script src="multiplayer.js"></script>
+</body>
+</html>

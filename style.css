@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-template-rows: repeat(6, 60px);
+  gap: 5px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell.red {
+  background: red;
+}
+
+.cell.yellow {
+  background: yellow;
+}
+
+#status {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
